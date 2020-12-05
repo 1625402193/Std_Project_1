@@ -1,1 +1,15 @@
+#ifnde _CREATE_SCENE_H_
+#define _CReATE_SCENE_H_
+
 include "cocos2d.h"
+
+class CreateScene : public cocos2d::Scene
+{
+  public :
+  static cocos2d::Create()::createScene();
+  virtual bool init();
+  void CloseCallback(cocos2d::Ref* pSender);
+  CREATE_FUNC(CreateScene);
+}#end if
+  
+
